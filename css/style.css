@@ -210,7 +210,7 @@ body {
     width: 80%;
     margin: 10rem auto 0 auto; }
   .features__img {
-    background-image: url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg");
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/databank_naboo_01_169_6cd7e1e0.jpeg?region=0%2C0%2C1560%2C878&width=960");
     border-radius: 2rem;
     background-size: cover;
     display: flex;
@@ -224,7 +224,7 @@ body {
       transform: translateY(7rem);
       opacity: 0; }
     .features__img:hover {
-      background-image: linear-gradient(to right, #00000060, #00000060), url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg"); }
+      background-image: linear-gradient(to right, #00000060, #00000060), url("https://lumiere-a.akamaihd.net/v1/images/databank_naboo_01_169_6cd7e1e0.jpeg?region=0%2C0%2C1560%2C878&width=960"); }
       .features__img:hover span {
         transform: translateY(0rem);
         opacity: 1; }
@@ -244,6 +244,13 @@ body {
       .features__img-2:hover {
         background-image: linear-gradient(to right, #000000, #000000), url("https://www.syfy.com/sites/syfy/files/2017/06/valerian-trailer.jpg"); }
         .features__img-2:hover video {
+          opacity: 1; }
+    .features__img-3 {
+      background-image: url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg"); }
+      .features__img-3:hover {
+        background-image: linear-gradient(to right, #00000060, #00000060), url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg"); }
+        .features__img-3:hover span {
+          transform: translateY(0rem);
           opacity: 1; }
   .features__list {
     display: grid;

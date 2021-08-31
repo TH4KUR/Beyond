@@ -1,14 +1,21 @@
+let counts = 0;
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
-
+function listener(el, container) {
+  const fx = new TextScramble(el);
+  counts++;
+  console.log(el.dataset.des);
+  fx.setText(el.dataset.des, counts, container);
+}
 class TextScramble {
   constructor(el) {
     this.el = el;
     this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
   }
-  setText(newText) {
+  setText(newText, counts, container) {
+    if (counts >= 4) return;
     const oldText = this.el.innerText;
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise((resolve) => (this.resolve = resolve));
@@ -16,8 +23,8 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || "";
       const to = newText[i] || "";
-      const start = Math.floor(Math.random() * 40);
-      const end = start + Math.floor(Math.random() * 40);
+      const start = Math.floor(Math.random() * 20);
+      const end = start + Math.floor(Math.random() * 20);
       this.queue.push({ from, to, start, end });
     }
     cancelAnimationFrame(this.frameRequest);
@@ -59,28 +66,16 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 // Tour section
 // ——————————————————————————————————————————————————
-
 const decoder = (container) => {
   let arr = Array.from(Array.from(container.children)[1].children);
-  const head_initial = arr[0].textContent;
-  const p_initial = arr[1].textContent;
   container = Array.from(container.children)[1];
   arr.forEach((el) => {
-    const fx = new TextScramble(el);
-    if (el.dataset.type === "head") {
-      container.addEventListener("mouseenter", () =>
-        fx.setText(el.dataset.des)
-      );
-      container.addEventListener("mouseleave", () => fx.setText(head_initial));
-    }
-    if (el.dataset.type === "p") {
-      container.addEventListener("mouseenter", () =>
-        fx.setText(el.dataset.des)
-      );
-      container.addEventListener("mouseleave", () => fx.setText(p_initial));
-    }
+    container.addEventListener("mouseenter", () => {
+      listener(el, container);
+    });
   });
 };
+
 Array.from(document.querySelectorAll(".features")).forEach((el) => {
   decoder(el);
 });
