@@ -1,0 +1,28 @@
+$color-bg: #01012b;
+$color-bg-2: #07073f;
+$color-bg-3: #3c3ccd;
+$color-bg-4: #001220;
+$color-bg-5: #00326e;
+$color-primary: #ff2a6d;
+$color-secondary: #05d9e8;
+$color-text: #eee;
+$color-text-2: #005678;
+$color-text-3: #d1f7ff;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #111;
+  color: #eee;
+  min-height: 100vh;
+  overflow-x: hidden;
+}

@@ -1,0 +1,80 @@
+.link {
+  font-family: inherit;
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  &__primary {
+    font-weight: 300;
+    font-size: 9rem;
+    line-height: 0.7;
+    & span {
+      margin-left: 1.5rem;
+      font-size: 3rem;
+    }
+  }
+  &__secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    &::after {
+      margin-top: 1rem;
+      content: "";
+      width: 10ch;
+      height: 3px;
+      background-color: $color-bg-3;
+    }
+    &-text {
+      margin: 0 auto;
+      text-align: center;
+      width: 45ch;
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  }
+  &__tertiary {
+    text-transform: none;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  &__nav {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+}
+.btn {
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  &__cta {
+    color: $color-text;
+  }
+  & span {
+    transition: margin-left 0.3s ease;
+    margin-left: 1rem;
+  }
+  &:hover span {
+    margin-left: 2.5rem;
+  }
+}
+
+.wave {
+  &__img {
+    aspect-ratio: 1920/200;
+    width: 100vw;
+    &-2 {
+      transform: translateY(1rem);
+    }
+  }
+}

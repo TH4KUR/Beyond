@@ -1,0 +1,59 @@
+.navigation {
+  padding: 1rem;
+  background-color: #0000004f;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    filter: brightness(2);
+    margin-right: 1rem;
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 34%;
+  }
+  &__link {
+    color: $color-text;
+    transition: color 0.3s ease;
+    &:hover {
+      color: darken($color-text, 10%);
+    }
+    &-1 {
+      margin-right: 1.5rem;
+    }
+    &-2 {
+      margin-left: 1.5rem;
+    }
+  }
+  &__cta {
+    margin-right: 3rem;
+    padding: 0.95rem 1.85rem;
+    background-color: $color-secondary;
+    color: $color-bg-2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid $color-secondary;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: transparent;
+      color: $color-text;
+    }
+    &-container {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1 0 27%;
+    }
+  }
+}

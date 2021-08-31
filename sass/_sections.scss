@@ -1,0 +1,17 @@
+.section {
+  &__hero {
+    padding: 1rem 2rem 2rem 5rem;
+  }
+  &__intro {
+    padding-bottom: 6rem;
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    min-height: 80vh;
+  }
+  &__features {
+    padding: 5rem 2rem;
+    background-color: $color-bg-4;
+    min-height: 90vh;
+  }
+}
