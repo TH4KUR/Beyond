@@ -38,17 +38,17 @@
   &__cta {
     margin-right: 3rem;
     padding: 0.95rem 1.85rem;
-    background-color: $color-secondary;
-    color: $color-bg-2;
+    background-color: $color-primary;
+    color: #000;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 4px;
-    border: 1px solid $color-secondary;
+    border: 1px solid $color-primary;
     transition: all 0.4s ease;
     &:hover {
       background-color: transparent;
-      color: $color-text;
+      color: $color-primary;
     }
     &-container {
       display: flex;

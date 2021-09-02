@@ -7,7 +7,7 @@
   &__des {
     border-radius: 1rem;
     padding: 2rem 3rem;
-    background-color: $color-bg-5;
+    background-color: #131212;
     & p {
       font-size: 1.9rem;
     }
@@ -41,11 +41,16 @@
       transform: translateY(7rem);
       opacity: 0;
     }
+    & video {
+      width: 100%;
+      height: auto;
+      filter: brightness(1.1);
+      opacity: 0;
+    }
     &:hover {
-      background-image: linear-gradient(to right, #00000060, #00000060),
-        url("https://lumiere-a.akamaihd.net/v1/images/databank_naboo_01_169_6cd7e1e0.jpeg?region=0%2C0%2C1560%2C878&width=960");
-      & span {
-        transform: translateY(0rem);
+      background-image: linear-gradient(to right, #000000, #000000),
+        url("https://www.syfy.com/sites/syfy/files/2017/06/valerian-trailer.jpg");
+      & video {
         opacity: 1;
       }
     }

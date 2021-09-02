@@ -1,0 +1,70 @@
+.home {
+  cursor: cell;
+  max-width: 60%;
+  min-height: 45rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #111;
+  border-radius: 3rem;
+  overflow: hidden;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 9rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+  &__img {
+    min-height: 10rem;
+    background-size: cover;
+    &-1 {
+      background-image: url("../img/mars-condo.jpg");
+    }
+    &-2 {
+      background-image: url("../img/the\ Naboo\ house.jpg");
+    }
+    &-3 {
+      background-image: url("../img/the\ roverjpg.jpg");
+    }
+  }
+  &__des {
+    padding: 1rem 2rem;
+    display: grid;
+  }
+  &__cta {
+    padding: 1rem 1.5rem;
+    background-color: $color-primary;
+    color: $color-text;
+    font-size: 1.6rem;
+    border: 1px solid $color-primary;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    &:hover {
+      color: $color-primary;
+      background-color: transparent;
+    }
+  }
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style: none;
+    align-items: center;
+    font-size: 1.6rem;
+    & li {
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

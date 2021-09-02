@@ -3,19 +3,20 @@ let counts = 0;
 // TextScramble
 // ——————————————————————————————————————————————————
 function listener(el, container) {
-  const fx = new TextScramble(el);
-  counts++;
+  const fx = new TextScramble(el, 0);
   console.log(el.dataset.des);
   fx.setText(el.dataset.des, counts, container);
 }
 class TextScramble {
-  constructor(el) {
+  constructor(el, c) {
+    this.c = c;
     this.el = el;
-    this.chars = "!<>-_\\/[]{}—=+*^?#________";
+    this.chars = "!<>-_\\/[]{}—=+*^?#_";
     this.update = this.update.bind(this);
   }
   setText(newText, counts, container) {
-    if (counts >= 4) return;
+    this.c++;
+    if (this.c >= 4) return;
     const oldText = this.el.innerText;
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise((resolve) => (this.resolve = resolve));

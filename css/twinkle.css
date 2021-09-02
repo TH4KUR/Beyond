@@ -4,7 +4,8 @@
   position: relative;
 }
 canvas {
-  background-image: url("https://wallpaperaccess.com/full/84303.jpg");
+  background-image: linear-gradient(to bottom, #00000028, #000),
+    url("https://wallpaperaccess.com/full/84303.jpg");
   background-size: cover;
   position: absolute;
   filter: brightness(70%);

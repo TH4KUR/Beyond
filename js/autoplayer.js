@@ -19,3 +19,6 @@ class Autoplay {
 
 let valerian = new Autoplay(document.querySelector(".features__img-2"));
 valerian.attachListener();
+
+let ego = new Autoplay(document.querySelector(".features__img"));
+ego.attachListener();
