@@ -15,8 +15,11 @@ $color-text-3: #d1f7ff;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   box-sizing: border-box;
+  @media only screen and (max-width: 1500px) {
+    font-size: 50% !important;
+  }
 }
 
 body {

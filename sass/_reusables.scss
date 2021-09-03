@@ -2,7 +2,7 @@
   font-family: inherit;
   font-size: 2.25rem;
   font-weight: 300;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .heading {
@@ -12,8 +12,10 @@
     font-weight: 300;
     font-size: 9rem;
     line-height: 0.7;
+
     & span {
       margin-left: 1.5rem;
+
       font-size: 3rem;
     }
   }
@@ -50,6 +52,11 @@
   }
 }
 .btn {
+  &__cta {
+    color: $color-text;
+  }
+}
+.btn_my {
   font-family: inherit;
   font-size: 2rem;
   padding: 1rem 1.5rem;
@@ -57,9 +64,7 @@
   border: none;
   border-bottom: 1px solid #fff;
   cursor: pointer;
-  &__cta {
-    color: $color-text;
-  }
+
   & span {
     transition: margin-left 0.3s ease;
     margin-left: 1rem;

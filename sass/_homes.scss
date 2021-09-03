@@ -7,11 +7,20 @@
   background-color: #111;
   border-radius: 3rem;
   overflow: hidden;
+  @media only screen and (max-width: 1350px) {
+    max-width: 70%;
+  }
+  @media only screen and (max-width: 1100px) {
+    max-width: 90%;
+  }
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     max-width: 90%;
+    @media only screen and (max-width: 1500px) {
+      max-width: 100%;
+    }
     margin: 0 auto;
     margin-top: 9rem;
   }

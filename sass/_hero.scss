@@ -2,5 +2,8 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   min-height: 90vh;
+  @media only screen and (max-width: 1200px) {
+    min-height: 89vh;
+  }
   align-items: center;
 }
