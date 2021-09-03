@@ -73,6 +73,9 @@
   &__img {
     aspect-ratio: 1920/200;
     width: 100vw;
+    @media only screen and (max-width: 1900px) {
+      transform: translateY(-11%);
+    }
     &-2 {
       transform: translateY(1rem);
     }

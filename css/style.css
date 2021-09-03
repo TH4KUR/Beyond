@@ -75,6 +75,9 @@ body {
 .wave__img {
   aspect-ratio: 1920/200;
   width: 100vw; }
+  @media only screen and (max-width: 1900px) {
+    .wave__img {
+      transform: translateY(-11%); } }
   .wave__img-2 {
     transform: translateY(1rem); }
 
