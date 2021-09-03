@@ -291,7 +291,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     margin-top: 9rem; }
   .home__text {
