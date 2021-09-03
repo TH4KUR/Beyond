@@ -55,10 +55,15 @@
   top: 5px;
   right: 25%;
 }
-#slider-control img {
-  padding-top: 60%;
-  margin: 0 auto;
+#slider-control {
+  & a {
+    display: flex;
+    align-items: center;
+    transform: translateY(-7.5%);
+    // margin: 0 auto;
+  }
 }
+
 @media screen and (max-width: 992px) {
   #slider-control img {
     padding-top: 70px;

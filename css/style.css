@@ -153,6 +153,9 @@ body {
   background-size: cover;
   padding: 5rem 4rem; }
 
+.section__buy {
+  padding: 2rem 3rem; }
+
 .hero {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -407,9 +410,10 @@ body {
   top: 5px;
   right: 25%; }
 
-#slider-control img {
-  padding-top: 60%;
-  margin: 0 auto; }
+#slider-control a {
+  display: flex;
+  align-items: center;
+  transform: translateY(-7.5%); }
 
 @media screen and (max-width: 992px) {
   #slider-control img {
