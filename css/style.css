@@ -24,7 +24,8 @@ body {
 
 .heading {
   text-transform: uppercase;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin-top: 0; }
   .heading__primary {
     font-weight: 300;
     font-size: 9rem;
@@ -312,7 +313,12 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(20rem, 1fr));
   grid-gap: 2rem;
-  margin: 8rem 4rem; }
+  margin: 8rem 4rem;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1024px) {
+    .defence__grid {
+      grid-gap: 5rem; } }
 
 .defence__img {
   border-radius: 2rem;
@@ -321,7 +327,6 @@ body {
     width: 100%; }
 
 .defence__des p {
-  width: 80ch;
   font-size: 1.6rem; }
 
 .defence__list {

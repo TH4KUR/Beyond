@@ -4,6 +4,11 @@
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-gap: 2rem;
     margin: 8rem 4rem;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 1024px) {
+      grid-gap: 5rem;
+    }
   }
   &__img {
     border-radius: 2rem;
@@ -14,7 +19,7 @@
   }
   &__des {
     & p {
-      width: 80ch;
+      // width: 80ch;
       font-size: 1.6rem;
     }
   }
