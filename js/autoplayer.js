@@ -14,6 +14,9 @@ class Autoplay {
     this.container.addEventListener("mouseenter", () => {
       this.video.play();
     });
+    this.container.addEventListener("click", () => {
+      this.video.play();
+    });
     this.container.addEventListener("mouseleave", () => {
       this.video.pause();
     });
