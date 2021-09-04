@@ -1,5 +1,10 @@
 "use-strict";
 
+//////////////////////////////
+// Simulates a click event
+
+document.querySelector("h1").click();
+
 class Autoplay {
   constructor(container) {
     this.container = container;
