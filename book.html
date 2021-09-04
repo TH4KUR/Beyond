@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <title>BEYOND - The Earth</title>
+  </head>
+  <style>
+    html {
+      font-size: 100% !important;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .heading__secondary-book {
+      font-size: 40px;
+      margin-top: 2rem;
+    }
+    .heading__tertiary-book {
+      font-size: 30px;
+    }
+    form,
+    .form-des {
+      width: 50%;
+    }
+    .form-des {
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <h1 class="heading heading__secondary heading__secondary-book mb-xl">
+      Let's Book Something!
+    </h1>
+    <main>
+      <div class="form-des">
+        <h3 class="heading heading__tertiary heading__tertiary-book">
+          Bookings
+        </h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in illo
+          autem quibusdam. Illo reprehenderit tempora nulla tenetur accusamus!
+          Commodi eius molestias maiores inventore numquam quisquam quo fuga?
+          Cupiditate, dolorum?
+        </p>
+      </div>
+      <form name="book" action="#" netlify>
+        <div class="mb-3">
+          <label for="Email" class="form-label text-light">Email address</label>
+          <input
+            type="email"
+            class="form-control bg-dark text-light"
+            id="Email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="type" class="form-label">I want to book a ....</label>
+          <select name="type" id="type" class="form-control bg-dark text-light">
+            <option value="tour">Tour</option>
+            <option value="house">House</option>
+            <option value="bionic">Bionics</option>
+            <option value="weaponry" disabled>Weaponry</option>
+          </select>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

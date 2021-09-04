@@ -3,15 +3,6 @@
 //////////////////////////////////////////////////
 // Preventing Reload on every link
 
-let links = Array.from(document.querySelectorAll(".link"));
-
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    console.log(e);
-    e.preventDefault();
-  });
-});
-
 /////////////////////////////////////////////////
 // Animated blobs
 const blob1 = KUTE.fromTo(
