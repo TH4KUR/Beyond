@@ -3,16 +3,14 @@
 class Autoplay {
   constructor(container) {
     this.container = container;
+    this.video = Array.from(this.container.children)[0];
   }
   attachListener() {
     this.container.addEventListener("mouseenter", () => {
-      console.log(Array.from(this.container.children));
-      let [video] = Array.from(this.container.children);
-      video.play();
+      this.video.play();
     });
     this.container.addEventListener("mouseleave", () => {
-      let [video] = Array.from(this.container.children);
-      video.pause();
+      this.video.pause();
     });
   }
 }
@@ -22,3 +20,6 @@ valerian.attachListener();
 
 let ego = new Autoplay(document.querySelector(".features__img"));
 ego.attachListener();
+
+let defence = new Autoplay(document.querySelector(".defence__img"));
+defence.attachListener();

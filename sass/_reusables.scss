@@ -31,7 +31,7 @@
       content: "";
       width: 10ch;
       height: 3px;
-      background-color: $color-bg-3;
+      background-color: $color-primary;
     }
     &-text {
       margin: 0 auto;
@@ -79,10 +79,17 @@
     aspect-ratio: 1920/200;
     width: 100vw;
     transform: translateY(-11%);
+    &-none {
+      transform: none;
+    }
     @media only screen and (max-width: 1900px) {
     }
     &-2 {
       transform: translateY(1rem);
     }
   }
+}
+
+.rotate {
+  transform: rotate(90deg);
 }

@@ -23,7 +23,11 @@
     flex: 1 0 34%;
   }
   &__link {
-    color: $color-text;
+    color: #eee;
+    &:active,
+    &:visited {
+      color: #eee;
+    }
     transition: color 0.3s ease;
     &:hover {
       color: darken($color-text, 10%);
@@ -38,17 +42,18 @@
   &__cta {
     margin-right: 3rem;
     padding: 0.95rem 1.85rem;
-    background-color: $color-primary;
-    color: #000;
+    background-color: #ffffff28;
+    color: #eee;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 4px;
-    border: 1px solid $color-primary;
+    border: 1px solid transparent;
     transition: all 0.4s ease;
     &:hover {
       background-color: transparent;
-      color: $color-primary;
+      border: 1px solid $color-primary;
+      color: #eee;
     }
     &-container {
       display: flex;
@@ -56,4 +61,11 @@
       flex: 1 0 27%;
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  background-color: #3333336c;
 }

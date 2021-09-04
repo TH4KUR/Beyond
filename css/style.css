@@ -44,7 +44,7 @@ body {
       content: "";
       width: 10ch;
       height: 3px;
-      background-color: #3c3ccd; }
+      background-color: #ff2a6d; }
     .heading__secondary-text {
       margin: 0 auto;
       text-align: center;
@@ -80,8 +80,13 @@ body {
   aspect-ratio: 1920/200;
   width: 100vw;
   transform: translateY(-11%); }
+  .wave__img-none {
+    transform: none; }
   .wave__img-2 {
     transform: translateY(1rem); }
+
+.rotate {
+  transform: rotate(90deg); }
 
 .navigation {
   padding: 1rem;
@@ -106,6 +111,8 @@ body {
   .navigation__link {
     color: #eee;
     transition: color 0.3s ease; }
+    .navigation__link:active, .navigation__link:visited {
+      color: #eee; }
     .navigation__link:hover {
       color: #d5d5d5; }
     .navigation__link-1 {
@@ -115,21 +122,28 @@ body {
   .navigation__cta {
     margin-right: 3rem;
     padding: 0.95rem 1.85rem;
-    background-color: #ff2a6d;
-    color: #000;
+    background-color: #ffffff28;
+    color: #eee;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 4px;
-    border: 1px solid #ff2a6d;
+    border: 1px solid transparent;
     transition: all 0.4s ease; }
     .navigation__cta:hover {
       background-color: transparent;
-      color: #ff2a6d; }
+      border: 1px solid #ff2a6d;
+      color: #eee; }
     .navigation__cta-container {
       display: flex;
       justify-content: flex-end;
       flex: 1 0 27%; }
+
+.sticky {
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  background-color: #3333336c; }
 
 .section__hero {
   padding: 1rem 2rem 2rem 5rem; }
@@ -154,7 +168,11 @@ body {
   padding: 5rem 4rem; }
 
 .section__buy {
-  padding: 2rem 3rem; }
+  padding: 8rem 3rem; }
+
+.section__defence {
+  padding: 2rem 3rem;
+  background-color: #001220; }
 
 .hero {
   display: grid;
@@ -216,6 +234,8 @@ body {
     background-color: #131212; }
     .features__des p {
       font-size: 1.9rem; }
+    .features__des:hover {
+      animation: rgb 5s ease infinite; }
   .features__btn {
     margin-top: 2.5rem;
     margin-left: 1rem;
@@ -287,6 +307,28 @@ body {
       align-content: center; }
       .features__list li img {
         margin-right: 0.5rem; }
+
+.defence__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  margin: 8rem 4rem; }
+
+.defence__img {
+  border-radius: 2rem;
+  overflow: hidden; }
+  .defence__img video {
+    width: 100%; }
+
+.defence__des p {
+  width: 80ch;
+  font-size: 1.6rem; }
+
+.defence__list {
+  font-size: 1.75rem;
+  display: block; }
+  .defence__list li:not(:last-child) {
+    margin-bottom: 1.5rem; }
 
 .home {
   cursor: cell;
@@ -376,6 +418,9 @@ body {
   position: absolute;
   bottom: 35px;
   width: 100%; }
+
+.slider__img {
+  max-height: 10rem; }
 
 #itemslider h4 {
   font-family: "Josefin Sans", sans-serif;
@@ -504,6 +549,63 @@ body {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     left: 0; } }
+
+.footer {
+  background-color: #020202;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 5rem 10%;
+  color: #c0c0c0; }
+  .footer:hover .footer__logo {
+    filter: brightness(1.5); }
+  .footer__span {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    transition: 0.4s ease; }
+    .footer__span:hover {
+      background-color: #2525251f;
+      color: #ff2a6d; }
+  .footer__logo {
+    width: 10rem;
+    grid-column: 1/3;
+    transition: filter 0.4s ease;
+    filter: brightness(0.25);
+    align-self: center;
+    justify-self: center; }
+  .footer__list {
+    list-style: none; }
+    .footer__list li:not(:last-child) {
+      margin-bottom: 1rem; }
+    .footer__list-2 {
+      margin-top: 1rem; }
+  .footer__copy {
+    justify-self: end; }
+    .footer__copy b {
+      columns: #eee; }
+  .footer__link {
+    color: #c0c0c0;
+    transition: 0.3s ease; }
+    .footer__link:hover {
+      text-decoration: none;
+      color: #eee; }
+
+@keyframes rgb {
+  0% {
+    box-shadow: 3px 3px 5px #ff2a6d; }
+  20% {
+    box-shadow: 3px 3px 5px #91ff00; }
+  50% {
+    box-shadow: 3px 3px 5px #4c00ff; }
+  60% {
+    box-shadow: 3px 3px 5px #ff0000; }
+  75% {
+    box-shadow: 3px 3px 5px #00ff9d; }
+  90% {
+    box-shadow: 3px 3px 5px #ea00ff; }
+  100% {
+    box-shadow: 3px 3px 5px #ff2a6d; } }
 
 .mb-sm {
   margin-bottom: 1rem; }

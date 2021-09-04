@@ -1,0 +1,28 @@
+.defence {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+    margin: 8rem 4rem;
+  }
+  &__img {
+    border-radius: 2rem;
+    overflow: hidden;
+    & video {
+      width: 100%;
+    }
+  }
+  &__des {
+    & p {
+      width: 80ch;
+      font-size: 1.6rem;
+    }
+  }
+  &__list {
+    font-size: 1.75rem;
+    display: block;
+    & li:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

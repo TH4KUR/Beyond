@@ -1,0 +1,23 @@
+@keyframes rgb {
+  0% {
+    box-shadow: 3px 3px 5px $color-primary;
+  }
+  20% {
+    box-shadow: 3px 3px 5px #91ff00;
+  }
+  50% {
+    box-shadow: 3px 3px 5px #4c00ff;
+  }
+  60% {
+    box-shadow: 3px 3px 5px #ff0000;
+  }
+  75% {
+    box-shadow: 3px 3px 5px #00ff9d;
+  }
+  90% {
+    box-shadow: 3px 3px 5px #ea00ff;
+  }
+  100% {
+    box-shadow: 3px 3px 5px $color-primary;
+  }
+}

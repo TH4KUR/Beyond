@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/twinkle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="shortcut icon" href="css/pngwing.com.png" type="image/png">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -32,7 +33,7 @@
           <div class="navigation__logo-container">
             <img
             draggable="false"
-              src="css/pngwing.com.png"
+              src="img/logo.png"
               alt="Logo"
               class="navigation__logo"
             />
@@ -248,7 +249,7 @@
     </div>
     <section class="section__features">
       <h2 class="heading heading__secondary">Our bestselling Tours</h2>
-      <p class="heading__secondary-text">Below are our best selling tours. Hover your mouse over the card to translate from the planet's language.</p>
+      <p class="heading__secondary-text">Below are our best selling tours. Hover your mouse over the card to translate from the planet's language and <br> Hover over the image to play walkthrough.</p>
       <div class="features__container">
 
         <div class="features mb-xl">
@@ -322,6 +323,32 @@
         </div>
       </div>
     </section>
+    <div class="wave">
+      <img class="wave__img wave__img-none" draggable="false" src="img/wave-s4.svg" alt="wave" />
+    </div>
+    <section class="section__defence">
+      <h1 class="heading heading__secondary">Our Planetary defence system</h1>
+      <p class="heading__secondary-text">Here is a look at our all-new planetary defence system! <br> ( Hover over the image to play the video )</p>
+      <div class="defence__grid">
+        <div class="defence__des">
+          <h3 class="heading heading__tertiary mb-lar">Why do you need the defence system?</h3>
+          <p class="mb-xl">Eversince humans have started space travels we have seen that other planets are very advanced in terms of weaponry and defence systems. By far Every planet has a total shield protecting it and its residents except earth. <br><br> So to play our part <b>Beyond</b> has developed <b>Argon-255</b> a planetary defence system exclusively for Earth and only Earth.</p>
+          <ul class="features__list defence__list">
+            <li> <img draggable="false" src="img/check.svg" alt="svg"> Deploy Time: 2 minutes</li>
+            <li> <img draggable="false" src="img/check.svg" alt="svg"> Self Activated</li>
+            <li> <img draggable="false" src="img/check.svg" alt="svg"> Can retain 5 nuclear bombs at once</li>
+            <li> <img draggable="false" src="img/check.svg" alt="svg"> Only the United Nations can buy</li>
+            <li> <img draggable="false" src="img/check.svg" alt="svg"> Solar Energy + Fallback: Electricity</li>
+            <li> <img draggable="false" src="img/x.svg" alt="svg"> Cannot work solo</li>
+          </ul>
+        </div>
+        <div class="defence__img">
+          <video loop>
+            <source src="img/Planetary-Defence-mechanism.mp4">
+          </video>
+        </div>
+      </div>
+    </section>
     <section class="section__homes">
       <h2 class="heading heading__secondary">Our Luxurious Inter-Planet Homes</h2>
       <p class="heading__secondary-text">Not intrested in travelling? Start a new life on a whole new planet from scratch!</p>
@@ -383,7 +410,7 @@
 
 
 <!--Item slider text-->
-<h1 class="heading heading__secondary">Souvenirs (under development)</h1>
+<h1 class="heading heading__secondary">Souvenirs</h1>
 <p class="heading__secondary-text mb-xl">Not intrested in buying a house too? Buy yourself or your loved ones some luxurious souvenirs</p>
 
 <div class="container">
@@ -406,7 +433,7 @@
 
           <div class="item active">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="img/Slider/gold-dust.jpeg" class="img-responsive center-block"></a>
+              <a href="#" class="slider__img"><img src="img/Slider/gold-dust.jpeg" class="img-responsive center-block"></a>
               <h4 class="text-center">Naboo gold dust (24C)</h4>
               <h5 class="text-center">₪ 10,000</h5>
             </div>
@@ -414,7 +441,7 @@
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="img/Slider/super-comp.jpg" class="img-responsive center-block"></a>
+              <a href="#" class="slider__img"><img src="img/Slider/super-comp.jpg" class="img-responsive center-block"></a>
               <h4 class="text-center">Valerian's Super Computers</h4>
               <h5 class="text-center">₪ 40,000</h5>
             </div>
@@ -422,7 +449,7 @@
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="img/Slider/Diamond.jpeg" class="img-responsive center-block"></a>
+              <a href="#" class="slider__img"><img src="img/Slider/Diamond.jpeg" class="img-responsive center-block"></a>
               <h4 class="text-center">Mars diamonds</h4>
               <h5 class="text-center">₪ 10,000</h5>
             </div>
@@ -430,25 +457,25 @@
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1531925470851-1b5896b67dcd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91fe0ca1b5d72338a8aac04935b52148&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
+              <a href="#" class="slider__img"><img src="img/Slider/ego-statue.jpg" class="img-responsive center-block"></a>
               <h4 class="text-center">Ego's Statues</h4>
-              <h5 class="text-center">₪ 4000,00</h5>
+              <h5 class="text-center">₪ 40,000</h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=74065eec3c2f6a8284bbe30402432f1d&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAJICA FOTO</h4>
-              <h5 class="text-center">4000,00 TK</h5>
+              <a href="#" class="slider__img"><img src="img/Slider/jetpack-2.jpg" class="img-responsive center-block"></a>
+              <h4 class="text-center">Jetpack</h4>
+              <h5 class="text-center">₪ 4,000</h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1532086853747-99450c17fa2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61a42a11f627b0d21d0df757d9b8fe23&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAJICA MAYORAL</h4>
-              <h5 class="text-center">4000,00 TK</h5>
+              <a href="#" class="slider__img"><img src="img/Slider/bow.jpg" class="img-responsive center-block"></a>
+              <h4 class="text-center">Centaurian Bow n Arrow</h4>
+              <h5 class="text-center">₪ 10,000</h5>
             </div>
           </div>
 
@@ -463,49 +490,38 @@
   </div>
 </div>
     </section>
+    <footer class="footer">
+      <img src="img/logo.png" alt="Footer Logo" class="footer__logo">
+      <div class="footer__des">
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Home</a></li>
+         <li><a href="#" class="footer__link">Tours</a></li>
+         <li><a href="#" class="footer__link">Request a Quote</a></li>
+         <li><a href="#" class="footer__link">About Us</a></li>
+         <li><a href="#" class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__copy">
+        &copy; <b>Beyond 3020</b>, All rights reserved. 
+        <br> This website was made by <span class="footer__span">Eashaan Thakur (V04)</span>
+        <br>
+        <br>
+        Amrita Vidyalayam New Delhi (V04):
+        <br>
+        <ul class="footer__list-2">
+          <li>Aniket Anuraj XC</li>
+          <li>Eashaan Thakur XC</li>
+          <li>Sarthak Mukherjee XC</li>
+        </ul>
+      </div>
+    </footer>
     <!-- scripts -->
     <script src="js/twinkle.js" defer></script>
     <script src="js/decoder.js" defer></script>
     <script src="js/autoplayer.js" defer></script>
-<script>
-  $(document).ready(function(){
-
-$('#itemslider').carousel({ interval: 3000 });
-
-$('.carousel-showmanymoveone .item').each(function(){
-var itemToClone = $(this);
-
-for (var i=1;i<6;i++) {
-itemToClone = itemToClone.next();
-
-if (!itemToClone.length) {
-itemToClone = $(this).siblings(':first');
-}
-
-itemToClone.children(':first-child').clone()
-.addClass("cloneditem-"+(i))
-.appendTo($(this));
-}
-});
-});
+    <script src="js/user_exp.js" defer></script>
+    <script>
 
 </script>
-    <script>
-      const blob1 = KUTE.fromTo(
-        "#blob1",
-        { path: "#blob1" },
-        { path: "#blob2" },
-        { repeat: 999, duration: 3000, yoyo: true }
-      );
-      blob1.start();
-      const blob2 = KUTE.fromTo(
-        "#blob3",
-        { path: "#blob3" },
-        { path: "#blob4" },
-        { repeat: 999, duration: 3000, yoyo: true }
-      );
-      blob2.start();
-    </script>
-    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>

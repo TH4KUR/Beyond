@@ -1,0 +1,110 @@
+.features {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  min-height: 30rem;
+  grid-gap: 5rem;
+  transition: 0.5s ease;
+  &__des {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    background-color: #131212;
+    & p {
+      font-size: 1.9rem;
+    }
+    &:hover {
+      animation: rgb 5s ease infinite;
+    }
+  }
+  &__btn {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    color: #eee;
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    &:hover {
+      border-bottom: 1px solid #eee;
+    }
+  }
+  &__container {
+    width: 80%;
+    margin: 10rem auto 0 auto;
+  }
+  &__img {
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/databank_naboo_01_169_6cd7e1e0.jpeg?region=0%2C0%2C1560%2C878&width=960");
+    border-radius: 2rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    & span {
+      font-size: 2rem;
+      transition: all 0.2s ease;
+      transform: translateY(7rem);
+      opacity: 0;
+    }
+    & video {
+      width: 100%;
+      height: auto;
+      filter: brightness(1.1);
+      opacity: 0;
+    }
+    &:hover {
+      background-image: linear-gradient(to right, #000000, #000000),
+        url("https://www.syfy.com/sites/syfy/files/2017/06/valerian-trailer.jpg");
+      & video {
+        opacity: 1;
+      }
+    }
+    &-2 {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 2rem;
+      background-size: cover;
+      transition: 0.6s ease;
+      background-image: url("https://www.syfy.com/sites/syfy/files/2017/06/valerian-trailer.jpg");
+      & video {
+        width: 100%;
+        height: auto;
+        filter: brightness(1.1);
+        opacity: 0;
+      }
+      &:hover {
+        background-image: linear-gradient(to right, #000000, #000000),
+          url("https://www.syfy.com/sites/syfy/files/2017/06/valerian-trailer.jpg");
+        & video {
+          opacity: 1;
+        }
+      }
+    }
+    &-3 {
+      background-image: url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg");
+      &:hover {
+        background-image: linear-gradient(to right, #00000060, #00000060),
+          url("https://media.fromthegrapevine.com/assets/images/2018/12/alien-planet-1204-social.jpg.600x315_q71_crop-smart.jpg");
+        & span {
+          transform: translateY(0rem);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.9rem;
+    & li {
+      display: flex;
+      align-content: center;
+      & img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
