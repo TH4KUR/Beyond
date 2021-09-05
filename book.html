@@ -59,8 +59,28 @@
           Commodi eius molestias maiores inventore numquam quisquam quo fuga?
           Cupiditate, dolorum?
         </p>
+        <a href="./index.html" class="btn text-light border-bottom">
+          &larr; Go back</a
+        >
       </div>
-      <form name="book" action="#" netlify>
+      <form name="book" action="#" netlify class="needs-validation" novalidate>
+        <p class="form-control-plaintext text-light">
+          Please fill in your details below and our concerned team will reach
+          out to you!
+        </p>
+        <div class="mb-3">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control bg-dark text-light"
+            placeholder="My name is ......."
+            required
+          />
+          <div class="valid-feedback">Nice and beyond!</div>
+          <div class="invalid-feedback">How come you dont have a name 🤔.</div>
+        </div>
         <div class="mb-3">
           <label for="Email" class="form-label text-light">Email address</label>
           <input
@@ -68,18 +88,65 @@
             class="form-control bg-dark text-light"
             id="Email"
             placeholder="name@example.com"
+            required
           />
+          <div class="valid-feedback">Nice and beyond!</div>
+          <div class="invalid-feedback">Please enter a valid email id.</div>
         </div>
         <div class="mb-3">
           <label for="type" class="form-label">I want to book a ....</label>
-          <select name="type" id="type" class="form-control bg-dark text-light">
+          <select
+            name="type"
+            id="type"
+            class="form-control bg-dark text-light"
+            required
+          >
             <option value="tour">Tour</option>
             <option value="house">House</option>
-            <option value="bionic">Bionics</option>
-            <option value="weaponry" disabled>Weaponry</option>
+            <option value="bionic">Bionic</option>
+            <option value="weaponry" disabled>Weaponry (Coming soon...)</option>
           </select>
         </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label" required>Phone No.</label>
+          <input
+            class="form-control bg-dark text-light"
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="[7-9]{1}[0-9]{9}"
+            required
+          />
+          <div class="valid-feedback">Nice and beyond!</div>
+          <div class="invalid-feedback">Oh oh this doesn't look good.</div>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit!" />
       </form>
     </main>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
