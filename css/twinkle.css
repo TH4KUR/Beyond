@@ -8,7 +8,7 @@ canvas {
     url("https://wallpaperaccess.com/full/84303.jpg");
   background-size: cover;
   position: absolute;
-  filter: brightness(70%);
+  /* filter: brightness(70%); */
   top: 0%;
   left: 0;
   z-index: -1;
