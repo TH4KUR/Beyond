@@ -1,6 +1,7 @@
 .defence {
   &__grid {
     display: grid;
+    font-size: 70% !important;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-gap: 2rem;
     margin: 8rem 4rem;
@@ -19,8 +20,7 @@
   }
   &__des {
     & p {
-      // width: 80ch;
-      font-size: 1.6rem;
+      font-size: 1.75rem;
     }
   }
   &__list {

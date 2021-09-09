@@ -311,6 +311,7 @@ body {
 
 .defence__grid {
   display: grid;
+  font-size: 70% !important;
   grid-template-columns: repeat(2, minmax(20rem, 1fr));
   grid-gap: 2rem;
   margin: 8rem 4rem;
@@ -327,7 +328,7 @@ body {
     width: 100%; }
 
 .defence__des p {
-  font-size: 1.6rem; }
+  font-size: 1.75rem; }
 
 .defence__list {
   font-size: 1.75rem;
